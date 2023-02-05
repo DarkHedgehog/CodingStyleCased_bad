@@ -11,6 +11,8 @@
 		756272BE298FE79C0086C0A9 /* CodingStyleCased.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756272B3298FE79C0086C0A9 /* CodingStyleCased.framework */; };
 		756272C3298FE79C0086C0A9 /* CodingStyleCasedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272C2298FE79C0086C0A9 /* CodingStyleCasedTests.swift */; };
 		756272C4298FE79C0086C0A9 /* CodingStyleCased.h in Headers */ = {isa = PBXBuildFile; fileRef = 756272B6298FE79C0086C0A9 /* CodingStyleCased.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		756272CE298FE7C30086C0A9 /* CodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272CD298FE7C30086C0A9 /* CodingStyle.swift */; };
+		756272D0298FE7DC0086C0A9 /* String+CodingCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272CF298FE7DC0086C0A9 /* String+CodingCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		756272B7298FE79C0086C0A9 /* CodingStyleCased.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CodingStyleCased.docc; sourceTree = "<group>"; };
 		756272BD298FE79C0086C0A9 /* CodingStyleCasedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingStyleCasedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		756272C2298FE79C0086C0A9 /* CodingStyleCasedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStyleCasedTests.swift; sourceTree = "<group>"; };
+		756272CD298FE7C30086C0A9 /* CodingStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodingStyle.swift; sourceTree = "<group>"; };
+		756272CF298FE7DC0086C0A9 /* String+CodingCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CodingCase.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +75,10 @@
 		756272B5298FE79C0086C0A9 /* CodingStyleCased */ = {
 			isa = PBXGroup;
 			children = (
+				756272CD298FE7C30086C0A9 /* CodingStyle.swift */,
 				756272B6298FE79C0086C0A9 /* CodingStyleCased.h */,
 				756272B7298FE79C0086C0A9 /* CodingStyleCased.docc */,
+				756272CF298FE7DC0086C0A9 /* String+CodingCase.swift */,
 			);
 			path = CodingStyleCased;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756272D0298FE7DC0086C0A9 /* String+CodingCase.swift in Sources */,
 				756272B8298FE79C0086C0A9 /* CodingStyleCased.docc in Sources */,
+				756272CE298FE7C30086C0A9 /* CodingStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +403,7 @@
 		756272CB298FE79C0086C0A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 47X734N754;
@@ -410,6 +419,7 @@
 		756272CC298FE79C0086C0A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 47X734N754;
